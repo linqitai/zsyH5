@@ -4,91 +4,91 @@
     <div class="content">
       <div class="item">
         <div class="item-title" @click="qsClick(1)">
-          入驻臻收银
+          关于臻收银
           <span class="iconRightArrow"></span>
         </div>
         <div class="item-content" v-show="currentShow[0].contentShow">
+          <span>臻收银zpay是一款专业的聚合收银系统。该系统聚合了支付宝、微信等主流支付源，支持二维码、扫码枪、手机移动等多种扫码方式，提供丰富的实用功能（语音提示、对账统计、支持多店多人等），并通过网商银行清算资金，实现D+1结算方式，手续费低至0.38%。</br>臻收银不只是一个单纯的收银工具，我们还为商户提供丰富的线上营销活动，如收单关注公众号吸粉、商户补贴等各类活动提升商铺客流量。
+</span><br>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-title" @click="qsClick(2)">
+          入驻臻收银
+          <span class="iconRightArrow"></span>
+        </div>
+        <div class="item-content" v-show="currentShow[1].contentShow">
           <span>可通过应用市场下载臻收银APP，支持臻e盾、微信等第三方账号和手机号秒速注册登录，进入首页完成资料录入和上传即可完成商家入驻。（注：资料可分步骤进行上传，分别是“店铺信息”-“负责人资料”-“图片资料”-“绑定提现银行卡”）</span><br>
         </div>
       </div>
       <div class="item">
-        <div class="item-title" @click="qsClick(2)">收款（三种方式）
+        <div class="item-title" @click="qsClick(3)">
+          店铺管理
           <span class="iconRightArrow"></span>
         </div>
-        <div class="item-content" v-show="currentShow[1].contentShow">
+        <div class="item-content" v-show="currentShow[2].contentShow">
+          <span>修改信息：“店铺”-选择店铺-“修改信息”，则可以修改店铺基本信息。</br>增加分店：“首页”-“店铺”-“新增”，填写分店资料，无需审核，分店即可实现收银。</span><br>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-title" @click="qsClick(4)">
+          操作员管理
+          <span class="iconRightArrow"></span>
+        </div>
+        <div class="item-content" v-show="currentShow[3].contentShow">
+          <span>当您生意忙碌，需要店员协助收银时，点击首页“操作员”-“新增”-“角色”-选择“收银员”，填写资料后点击“新增”。</br>当您需要配备一个统筹店铺账务、掌握总店及分店交易情况的人员时，点击首页“操作员”-“新增”-“角色”，选择“管理员”，填写资料后点击“新增”。</span><br>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-title" @click="qsClick(5)">收款
+          <span class="iconRightArrow"></span>
+        </div>
+        <div class="item-content" v-show="currentShow[4].contentShow">
           <span>
             1、二维码收银：点击“我的”-“收款码”，选择相应店铺的收款码进行下载，张贴在店铺显眼处，由顾客扫码付款。与此同时，打开“我的”-“语音提示”，及时收听收银语音提示，避免漏收、错收。<br>2、扫码枪收银：登录电脑下载PC客户端软件，安装后连接扫码枪，即可在电脑上操作管理。 <br>3、手机收银：使用APP首页的“扫码收款”“二维码收款”功能进行移动收银。
           </span><br>
         </div>
       </div>
       <div class="item">
-        <div class="item-title" @click="qsClick(3)">退款
+        <div class="item-title" @click="qsClick(6)">退款
           <span class="iconRightArrow"></span>
         </div>
-        <div class="item-content" v-show="currentShow[2].contentShow">
+        <div class="item-content" v-show="currentShow[5].contentShow">
           <span>如果收款金额有出入或错误，则点击收款账单界面的右上角“退款”按钮进行操作，并可对退款进行备注。</span><br>
         </div>
       </div>
       <div class="item">
-        <div class="item-title" @click="qsClick(4)">查看账单
-          <span class="iconRightArrow"></span>
-        </div>
-        <div class="item-content" v-show="currentShow[3].contentShow">
-          <span>1、点击“账本”-“筛选”，对总账目/特定账目进行对账查看。 <br>2、“报表”功能新增收入统计图和收入趋势图，更为直观。
-          </span><br>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title" @click="qsClick(5)">增加收银员/管理员
-          <span class="iconRightArrow"></span>
-        </div>
-        <div class="item-content" v-show="currentShow[4].contentShow">
-          <span>当您生意忙碌，需要店员协助收银时，点击首页“操作员”-“新增”-“角色”-选择“收银员”，填写资料后点击“新增”。 <br>当您需要配备一个统筹店铺账务、掌握总店及分店交易情况的人员时，点击首页“操作员”-“新增”-“角色”，选择“管理员”，填写资料后点击“新增”。
-          </span><br>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title" @click="qsClick(6)">分店管理
-          <span class="iconRightArrow"></span>
-        </div>
-        <div class="item-content" v-show="currentShow[5].contentShow">
-          <span>“首页”-“店铺”-“新增”，填写分店资料，无需审核，分店即可实现收银。<br> “店铺”-选择店铺-“修改信息”，则可以修改店铺基本信息。
-          </span><br>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title" @click="qsClick(7)">关于修改
+        <div class="item-title" @click="qsClick(7)">账本
           <span class="iconRightArrow"></span>
         </div>
         <div class="item-content" v-show="currentShow[6].contentShow">
-          <span>修改银行卡：点击“我的”-“银行卡”-“更换”-填写资料。<br>修改登录密码：点击“我的”-“密码管理”-“修改登录密码”。<br>修改交易密码：点击“我的”-“密码管理”-“修改交易密码”。
+          <span>点击“账本”-“筛选”，对总账目/特定账目进行对账查看。。
           </span><br>
         </div>
       </div>
       <div class="item">
-        <div class="item-title" @click="qsClick(8)">臻收银的手续费率多少？
+        <div class="item-title" @click="qsClick(8)">报表
           <span class="iconRightArrow"></span>
         </div>
         <div class="item-content" v-show="currentShow[7].contentShow">
-          <span>手续费率0.38%。交易手续费将在商户结算款项中同步扣收。
+          <span>“报表”功能新增收入统计图和收入趋势图，更为直观。
           </span><br>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title" @click="qsClick(9)">资金多久到账？
+      <div class="item item-qa">
+        <div class="item-title" @click="qsClick(9)">Q&A
           <span class="iconRightArrow"></span>
         </div>
         <div class="item-content" v-show="currentShow[8].contentShow">
-          <span>选择结算到银行卡，则为D+1到账（汇总清算），通常在交易发生后的下一个工作日上午12点前到账。
-          </span><br>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title" @click="qsClick(10)">资金安全吗？
-          <span class="iconRightArrow"></span>
-        </div>
-        <div class="item-content" v-show="currentShow[9].contentShow">
-          <span>臻收银系杭州臻商大数据科技有限公司联合网商银行推出，由网商银行作为资金清算渠道，资金安全用户无需担心。
+          <span>
+            <h3>1.臻收银的手续率多少？</h3>
+            <span>答：手续费0.38%。交易手续费将在商户结算款项中同步扣收。</span>
+            <h3>2.资金多久到账？</h3>
+            <span>答：选择结算到银行卡，则为 D+1到账（汇总清算），通常在第二天上午12点前到账。</span>
+            <h3>3.资金安全吗？</h3>
+            <span>答：臻收银系杭州臻商大数据科技有限公司联合网商银行推出，由网商银行作为资金清算渠道，资金安全用户无需担心。</span>
+            <h3>4.系统是否支持花呗/信用卡？</h3>
+            <span>答：支持。如需开通请联系客服。</span>
           </span><br>
         </div>
       </div>
