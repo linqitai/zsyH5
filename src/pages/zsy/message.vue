@@ -1,16 +1,15 @@
 <template>
   <div class="message">
-    <z-header backType='backApp' :countUnread="countUnread">系统消息</z-header>
+    <z-header backType='backApp' :countUnread="countUnread">消息</z-header>
     <div class="content">
       <div class="item" :class="[item.isRead===1?'changeColor':'']" @click="intoMessageDetails(item.mapId,item.isRead)" v-for="item in list">
-        <span class="item-img" :class="[item.isRead===1?'img2':'img1']"></span>
+        <!-- <span class="item-img" :class="[item.isRead===1?'img2':'img1']"></span> -->
         <div class="item-bigDiv" ref="fontGray" id='contentMessage'>
           <div class="item-title-line">
             <span class="item-title">{{item.title}}</span>
-            <span class="item-time">{{item.created | time}}</span>
           </div>
-          <!-- <div class="item-message">{{item.context}}</div> -->
-          <span class="item-message">{{item.context | getLimiteText}}</span>
+            <div class="item-time">{{item.created | time}}</div>
+            <div class="item-message">{{item.context | getLimiteText}}</div>
         </div>
       </div>
     </div>
